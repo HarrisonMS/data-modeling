@@ -1,8 +1,8 @@
 exports.up = function (knex) {
   return knex.schema.createTable("recipes", function (recipes) {
     recipes.increments();
-    recipe.string("name").notNullable();
-    recipe.string("summary");
+    recipes.string("name").notNullable();
+    recipes.string("summary");
   });
 };
 exports.down = function (knex) {
